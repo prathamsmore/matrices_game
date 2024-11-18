@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Math Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container" id="gameScreen">
+        <h1>Matrix Math Game</h1>
+        <div id="operation"></div>
+
+        <div class="matrix-inputs">
+            <h3>Matrix A</h3>
+            <div id="matrixA" class="matrix"></div>
+
+            <h3>Matrix B</h3>
+            <div id="matrixB" class="matrix"></div>
+        </div>
+
+        <div id="options" class="options">
+            <div class="option-btn" id="option1"></div>
+            <div class="option-btn" id="option2"></div>
+            <div class="option-btn" id="option3"></div>
+            <div class="option-btn" id="option4"></div>
+        </div>
+
+        <div class="score-timer">
+            <h3>Score: <span id="score">0</span></h3>
+            <h3>Time Left: <span id="timer">10</span> seconds</h3>
+        </div>
+    </div>
+
+    <div id="gameOverScreen" class="game-over-screen">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <button id="replayButton">Play Again</button>
+
+        <!-- <div>
+            <h3>Submit Your Score</h3>
+            <input type="text" id="playerName" placeholder="Your Name">
+            <button id="submitScore">Submit</button>
+        </div> -->
+    </div>
+
+    <!-- <div id="leaderboardScreen">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboardList"></ul>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
