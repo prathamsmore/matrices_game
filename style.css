@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.matrix-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.matrix input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.option-btn {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #ddd;
+}
+
+.score-timer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-over-screen {
+    display: none;
+    text-align: center;
+}
+
+#replayButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#submitScore {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .matrix input {
+        padding: 5px;
+    }
+
+    .option-btn {
+        padding: 5px;
+    }
+}
